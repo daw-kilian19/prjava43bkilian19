@@ -2,21 +2,23 @@ package prjava43kilian19;
 import java.awt.*; // using AWT containers and components
 import java.awt.event.*; // using AWT events and listener interfaces
 import java.sql.*;
-<<<<<<< HEAD
-import java.net.*;
-=======
-import java.io.*;
->>>>>>> branca00kilian19
-// An AWT GUI program inherits the top-level container java.awt.Frame
-public class Prjava43kilian19 extends Frame
-implements ActionListener, WindowListener {
+
 // This class acts as listener for ActionEvent and WindowEvent
-// Java support only single inheritance, where a class can extend
+
+
+
+import java.io.*;
+
 // one superclass, but can implement multiple interfaces.
+
+
+/** Constructor to setup the GUI */
+public class Prjava43kilian19 extends Frame 
+implements ActionListener, WindowListener {
 private TextField tfCount;
 private int count = 0; // Counter's value
-/** Constructor to setup the GUI */
-public Prjava43kilian19 () {
+public PrJava43kilian19(){
+
 setLayout(new FlowLayout()); // "this" Frame sets to FlowLayout
 add(new Label("Counter")); // "this" Frame adds an anonymous Label
 tfCount = new TextField("0", 10); // allocate TextField
